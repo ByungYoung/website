@@ -9,13 +9,12 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="md:col-span-2">
-            <h3 className="text-2xl font-bold text-white mb-4">TechCorp</h3>
+            <h3 className="text-2xl font-bold text-white mb-4">GGxBank</h3>
             <p className="text-gray-300 mb-6 max-w-md">
-              Building the future with innovative technology and creative solutions. 
-              We transform ideas into powerful digital experiences.
+              GGxBank can pursue opportunities in digital finance to drive innovative growth for the future.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              {/* <a href="#" className="text-gray-400 hover:text-white transition-colors">
                 <Github className="h-6 w-6" />
               </a>
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
@@ -26,7 +25,7 @@ export default function Footer() {
               </a>
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
                 <Mail className="h-6 w-6" />
-              </a>
+              </a> */}
             </div>
           </div>
 
@@ -55,7 +54,7 @@ export default function Footer() {
 
         <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
-            © 2025 TechCorp. All rights reserved.
+            © 2025 GGxBank. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</a>

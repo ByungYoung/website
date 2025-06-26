@@ -2,16 +2,12 @@
 
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
-import { Globe, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
-  const { language, setLanguage, t } = useLanguage();
-
-  const toggleLanguage = () => {
-    setLanguage(language === 'ko' ? 'en' : 'ko');
-  };
+  const { t } = useLanguage();
 
   return (
     <nav className="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-gray-800">
@@ -19,7 +15,7 @@ export default function Navigation() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <h1 className="text-xl font-bold text-white">TechCorp</h1>
+            <h1 className="text-xl font-bold text-white">GGxBank</h1>
           </div>
 
           {/* Desktop Navigation */}
@@ -40,18 +36,8 @@ export default function Navigation() {
             </div>
           </div>
 
-          {/* Language Toggle & Mobile Menu */}
-          <div className="flex items-center space-x-4">
-            <Button
-              variant="ghost"
-              size="sm"
-              onClick={toggleLanguage}
-              className="text-gray-300 hover:text-white"
-            >
-              <Globe className="h-4 w-4 mr-2" />
-              {language === 'ko' ? '한' : 'EN'}
-            </Button>
-
+          {/* Mobile Menu */}
+          <div className="flex items-center">
             {/* Mobile menu button */}
             <div className="md:hidden">
               <Button
