@@ -91,7 +91,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <h4 className="text-white font-semibold">Email</h4>
-                  <p className="text-gray-300">hello@techcorp.com</p>
+                  <p className="text-gray-300">ssenyo@gmail.com</p>
                 </div>
               </div>
 
@@ -101,7 +101,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <h4 className="text-white font-semibold">Phone</h4>
-                  <p className="text-gray-300">+82 2-1234-5678</p>
+                  <p className="text-gray-300">+82 10-5586-9392</p>
                 </div>
               </div>
 
