@@ -1,7 +1,5 @@
 'use client';
 
-import { Github, Twitter, Linkedin, Mail } from 'lucide-react';
-
 export default function Footer() {
   return (
     <footer className="bg-black border-t border-gray-800">
