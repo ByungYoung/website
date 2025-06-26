@@ -80,7 +80,7 @@ export default function ContactSection() {
             <div>
               <h3 className="text-2xl font-bold text-white mb-6">Get in Touch</h3>
               <p className="text-gray-300 mb-8">
-                We're here to help you bring your ideas to life. Reach out to us and let's start building something amazing together.
+                We&apos;re here to help you bring your ideas to life. Reach out to us and let&apos;s start building something amazing together.
               </p>
             </div>
 
