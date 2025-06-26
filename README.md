@@ -48,7 +48,9 @@ pnpm install
 pnpm dev
 ```
 
-브라우저에서 [http://localhost:3000](http://localhost:3000)을 열어 확인하세요.## 📝 사용 가능한 스크립트
+브라우저에서 [http://localhost:3000](http://localhost:3000)을 열어 확인하세요.
+
+## 📝 사용 가능한 스크립트
 
 | 명령어 | 설명 |
 |--------|------|
@@ -106,7 +108,9 @@ const translations = {
     // ...
   }
 };
-```## 🎨 UI 컴포넌트 추가
+```
+
+## 🎨 UI 컴포넌트 추가
 
 새로운 shadcn/ui 컴포넌트를 추가하려면:
 
@@ -149,17 +153,57 @@ module.exports = {
 
 ### Vercel (권장)
 
-```bash
-npm i -g vercel
-vercel
-```
+이 프로젝트는 Vercel에 최적화되어 있습니다:
+
+1. **GitHub 저장소 연결**
+   ```bash
+   # Vercel CLI 설치 (선택사항)
+   npm i -g vercel
+   ```
+
+2. **자동 배포**
+   - GitHub에 푸시하면 자동으로 배포됩니다
+   - `main` 브랜치는 프로덕션 환경에 배포
+   - 다른 브랜치는 미리보기 환경에 배포
+
+3. **수동 배포 (CLI 사용시)**
+   ```bash
+   vercel
+   ```
 
 ### 기타 플랫폼
+
+다른 호스팅 플랫폼 사용시:
 
 ```bash
 pnpm build
 pnpm start
 ```
+
+### 배포 설정
+
+프로젝트에는 `vercel.json` 파일이 포함되어 있어 Vercel에서 올바르게 빌드됩니다:
+
+- **프레임워크**: Next.js 자동 감지
+- **빌드 명령어**: `pnpm build`
+- **출력 디렉토리**: `.next`
+- **설치 명령어**: `pnpm install`
+
+### 배포 문제 해결
+
+**Vercel에서 "public 디렉토리를 찾을 수 없음" 오류 발생시:**
+- `vercel.json` 파일이 프로젝트 루트에 있는지 확인
+- Next.js 프로젝트는 `.next` 디렉토리가 출력 디렉토리임
+
+**ESLint 관련 오류 발생시:**
+- 필요한 ESLint 패키지가 설치되어 있는지 확인:
+  ```bash
+  pnpm add -D @eslint/eslintrc
+  ```
+
+**빌드 오류 발생시:**
+- Node.js 버전이 20.11.0 이상인지 확인
+- 로컬에서 빌드 테스트: `pnpm build`
 
 ## 📚 참고 자료
 
